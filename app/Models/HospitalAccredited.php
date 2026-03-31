@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use OwenIt\Auditing\Contracts\Auditable;
+
+class HospitalAccredited extends Model implements Auditable
+{
+    use HasFactory;
+    use \OwenIt\Auditing\Auditable;
+
+    protected $auditInclude  = [
+        'id','created_at', 'created_by', 'updated_at', 'updated_by','is_active','hosp_code','hosp_name'
+       
+    ];
+    protected $connection = 'pgsql';
+    protected $table = 'tbl_hospital_accredited'; 
+}

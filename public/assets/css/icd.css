@@ -1,0 +1,68 @@
+.select2-container {
+    height: 100%;
+  
+}
+
+.select2-container {
+    width: 100% !important;
+    
+}
+
+
+
+.select2-container .select2-selection--single {
+    height: 44px !important;
+   
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #d2d6da;
+    margin: 6px;
+
+}
+
+.select2-selection {
+    border: 1px solid #d2d6da !important;
+  }
+
+
+
+.select2-results__options {
+    font-weight: 400;
+    font-size: 0.8571em;
+}
+
+.select2-selection__arrow {
+    margin: 8px;
+  }
+
+
+  #container {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #F44335 ;
+  }
+  #name {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    line-height: 50px;
+  }
+
+
+  #container2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #F44335 ;
+  }
+  #name2 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    line-height: 50px;
+  }

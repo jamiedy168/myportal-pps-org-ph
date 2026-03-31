@@ -1,0 +1,25 @@
+
+  #paging {
+    padding: 0 20px 20px 20px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  #paging a {
+    color: #7b809a;
+    background: #fbfbfb;
+    padding: 8px 12px;
+    margin-right: 5px;
+    text-decoration: none;
+  }
+  #paging a.aktif {
+    background: #e91e63 !important;
+    color: #fff;
+  }
+  #paging a:hover {
+    background: #d8d7d7 !important;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  

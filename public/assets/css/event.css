@@ -1,0 +1,162 @@
+.content {
+    height: 100% !important;
+}
+.fc-col-header, .fc-timegrid-body {
+    width: 100% !important;
+    height: 100% !important;
+}
+.fc-scrollgrid-sync-table {
+    width: 100% !important;
+    height: 100% !important;
+}
+.fc-daygrid-body {
+    width: 100% !important;
+    height: 100% !important;
+}
+.fc-daygrid-body-balanced {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.fc-event {
+    font-size: 10px;            /* EDIT HERE */
+}
+
+.fc-event-title
+{
+  color:rgb(255, 255, 255); 
+
+} 
+
+
+.select2-container {
+    height: 100%;
+  
+}
+
+.select2-container {
+    width: 100% !important;
+    
+}
+
+
+
+.select2-container .select2-selection--single {
+    height: 42px !important;
+   
+}
+
+
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #d2d6da;
+    margin: 6px;
+
+}
+
+
+
+.select2-results__options {
+    font-weight: 400;
+    font-size: 0.8571em;
+}
+
+.select2-selection {
+  border: 1px solid #d2d6da !important;
+}
+
+
+.select2-selection__arrow {
+  margin: 8px;
+}
+
+
+
+input[type="file"]::file-selector-button {
+    padding: 0.2em 0.4em;
+    border-radius: 0.2em;
+    background-color: #E53935 ;
+
+    color:white !important;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+    background-color: #E53935 ;
+    border: 2px solid #E53935 ;
+  }
+
+
+  .upload-container {
+    position: relative;
+  }
+  .upload-container input {
+    border: 1px solid #E53935 ;
+    background: #f1f1f1;
+    outline: 2px dashed #E53935 ;
+    outline-offset: -5px;
+    padding: 80px 0px 150px 100px;
+    text-align: center !important;
+    width: 100%;
+  }
+  .upload-container input:hover {
+    background: #ddd; 
+  }
+  .upload-container:before {
+    position: absolute;
+    bottom: 70px;
+    left: 110px;
+    content: " (or) Drag and Drop files here. ";
+    color: #E53935 ;
+    font-weight: 900;
+   
+  }
+
+
+  .img-wrap {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+  }
+  .img-wrap .close {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 100;
+    background-color: #FFF;
+    padding: 5px 2px 2px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: .2;
+    text-align: center;
+    font-size: 22px;
+    line-height: 10px;
+    border-radius: 50%;
+  }
+  .img-wrap:hover .close {
+    opacity: 1;
+  }
+
+
+  .disabled-button-wrapper {
+    display: inline-block;
+  }
+  
+  .disabled-button-wrapper .btn[disabled] {
+    pointer-events: none;
+  }
+  
+  .disabled-button-wrapper {
+    cursor: not-allowed;
+  }
+
+
+  .scroll {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+
+
+  
+

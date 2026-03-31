@@ -1,0 +1,60 @@
+input[type="file"]::file-selector-button {
+	padding: 0.2em 0.4em;
+	border-radius: 0.2em;
+	background-color: #E53935 ;
+  
+	color:white !important;
+  }
+  
+  input[type="file"]::file-selector-button:hover {
+	background-color: #E53935 ;
+	border: 2px solid #E53935 ;
+  }
+
+.alert-minimalist {
+	background-color: rgb(241, 242, 240);
+	border-color: rgba(149, 149, 149, 0.3);
+	border-radius: 3px;
+	color: rgb(149, 149, 149);
+	padding: 10px;
+}
+.alert-minimalist > [data-notify="icon"] {
+	height: 50px;
+	margin-right: 12px;
+}
+.alert-minimalist > [data-notify="title"] {
+	color: rgb(51, 51, 51);
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.alert-minimalist > [data-notify="message"] {
+	font-size: 80%;
+}
+
+
+
+
+.select2-container {
+	border: 1px solid #495057;
+    width: 100% !important;
+}   
+
+.select2-container .select2-selection--single {
+	
+    height: 30px !important;
+    
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #e91e63;
+    line-height: 36px;
+}
+
+.select2-results__options {
+    font-weight: 400;
+    font-size: 0.8571em;
+}
+.span.select2-selection.select2-selection--single {
+        outline: none;
+    }

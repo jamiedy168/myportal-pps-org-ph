@@ -1,0 +1,33 @@
+
+  
+.select2-container {
+    height: 100%;
+  
+}
+
+.select2-container {
+    width: 100% !important;
+    
+}
+
+
+
+.select2-container .select2-selection--single {
+    height: 46px !important;
+   
+}
+
+
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #d2d6da;
+    margin: 6px;
+
+}
+
+
+
+.select2-results__options {
+    font-weight: 400;
+    font-size: 0.8571em;
+}
