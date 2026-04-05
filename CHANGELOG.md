@@ -103,6 +103,8 @@ Members see live stream links in the sidebar and on event pages.
 - Committed 38 previously untracked programmer files to Git for backup: new controllers (Announcement, Certificate, DatabaseBackup, Impersonate, IvsStream), models (Announcement, BackupLog, IvsStream), exports (CPDPoints, ElectionResults), migrations (6 files), Blade views (announcements, IVS player, database backup, IVS maintenance, pagination), config (professional.php), and platform/nginx configs.
 
 ### Security
+- `.gitignore` — added `.env.example` so it can never be accidentally committed again.
+- `.env.example` — fully rewritten with generic placeholders only (`your-aws-key-here`, etc.). No real values, org names, endpoints, or credentials.
 - `routes/web.php` — `GET /clear-all` route now protected with `auth` middleware and Admin-only (`role_id === 1`) check. Previously open to the public internet with no authentication. TODO P1: convert to Spatie `hasRole('Admin')`.
 - `.gitignore` updated to explicitly block `*.zip`, `/storage/logs`, `.DS_Store`, `Thumbs.db`, and `.env.*.backup` from ever being committed. `.env` and `.env.backup` entries consolidated and confirmed present.
 - `.ebextensions/env.config` — replaced `APP_KEY` and `DB_PASSWORD` with `REPLACED_SEE_AWS_CONSOLE` placeholders. Real values must be set in the AWS Elastic Beanstalk console environment variables, never in committed files.

@@ -203,6 +203,7 @@
 | 002 | Phase 0 | P0-T1 Full Codebase Audit | Full audit of routes, controllers, models, views, role checks, DB queries, packages, migrations. Output saved to AUDIT.md | 2026-04-05 | AUDIT.md created — 946 lines, 10 sections |
 | 003 | Phase 0 | P0-T2 | Fixed unprotected /clear-all route in web.php | 2026-04-05 | Done |
 | 004 | Phase 0 | P0-T3 | Committed all untracked programmer files to GitHub for backup | 2026-04-05 | Done |
+| 005 | Phase 0 | Security | Added .env.example to .gitignore and rewrote it with safe placeholders only | 2026-04-05 | Done |
 
 ---
 
