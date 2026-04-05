@@ -103,6 +103,8 @@
 | B12 | Cache not flushed on Payment Gateway key save | 🟠 Medium | ⏳ Pending |
 | B13 | Audit trail route-level middleware missing | 🟠 Medium | ⏳ Pending |
 | B14 | Session-bound payment success/cancel flow incomplete | 🟠 Medium | ⏳ Pending |
+| B15 | Sensitive keys exposed in Git history (APP_KEY, DB_PASSWORD, AWS keys, PayMongo keys) | 🔴 Critical | ✅ Fixed |
+| B16 | .env.config contained real secrets in Git | 🔴 Critical | ✅ Fixed |
 
 ---
 
@@ -196,7 +198,7 @@
 
 | # | Phase | Task | Prompt Summary | Date | Result |
 |---|---|---|---|---|---|
-| — | — | — | No prompts run yet | — | — |
+| 001 | Pre-Phase 0 | Security hardening | Removed exposed secrets from Git history, rotated all API keys, protected .env and env.config | 2026-04-05 | Done |
 
 ---
 
