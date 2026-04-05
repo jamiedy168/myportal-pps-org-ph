@@ -19,6 +19,7 @@ storage/*.key
 /storage/logs
 .env
 .env.backup
+.env.*.backup
 .env.production
 Homestead.yaml
 Homestead.json
