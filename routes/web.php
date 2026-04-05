@@ -43,6 +43,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/clear-all', function () {
+    if (!auth()->check() || auth()->user()->role_id !== 1) {
+        abort(403);
+    }
+
     Artisan::call('config:clear');
     Artisan::call('config:cache');
     Artisan::call('route:cache');
@@ -50,7 +54,7 @@ Route::get('/clear-all', function () {
     Artisan::call('view:clear');
 
     return 'All caches cleared and rebuilt successfully!';
-});
+})->middleware('auth'); // TODO P1: replace role_id check with Spatie hasRole('Admin')
 
 Route::get('/', function () {
     return redirect('sign-in');
