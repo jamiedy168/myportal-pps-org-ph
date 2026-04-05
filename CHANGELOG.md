@@ -100,7 +100,9 @@ Members see live stream links in the sidebar and on event pages.
 > Changes staged but not yet deployed to production.
 
 ### Security
-- `.gitignore` updated to explicitly block `*.zip`, `/storage/logs`, `.DS_Store`, and `Thumbs.db` from ever being committed. `.env` and `.env.backup` entries consolidated and confirmed present.
+- `.gitignore` updated to explicitly block `*.zip`, `/storage/logs`, `.DS_Store`, `Thumbs.db`, and `.env.*.backup` from ever being committed. `.env` and `.env.backup` entries consolidated and confirmed present.
+- `.ebextensions/env.config` — replaced `APP_KEY` and `DB_PASSWORD` with `REPLACED_SEE_AWS_CONSOLE` placeholders. Real values must be set in the AWS Elastic Beanstalk console environment variables, never in committed files.
+- `.env` confirmed not tracked by git.
 
 ### Fixed
 - `resources/views/events/view.blade.php` (+15 lines / -11 lines)
