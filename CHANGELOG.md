@@ -99,6 +99,9 @@ Members see live stream links in the sidebar and on event pages.
 ## [Unreleased]
 > Changes staged but not yet deployed to production.
 
+### Added
+- Committed 38 previously untracked programmer files to Git for backup: new controllers (Announcement, Certificate, DatabaseBackup, Impersonate, IvsStream), models (Announcement, BackupLog, IvsStream), exports (CPDPoints, ElectionResults), migrations (6 files), Blade views (announcements, IVS player, database backup, IVS maintenance, pagination), config (professional.php), and platform/nginx configs.
+
 ### Security
 - `routes/web.php` — `GET /clear-all` route now protected with `auth` middleware and Admin-only (`role_id === 1`) check. Previously open to the public internet with no authentication. TODO P1: convert to Spatie `hasRole('Admin')`.
 - `.gitignore` updated to explicitly block `*.zip`, `/storage/logs`, `.DS_Store`, `Thumbs.db`, and `.env.*.backup` from ever being committed. `.env` and `.env.backup` entries consolidated and confirmed present.
