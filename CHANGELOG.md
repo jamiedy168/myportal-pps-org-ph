@@ -99,6 +99,9 @@ Members see live stream links in the sidebar and on event pages.
 ## [Unreleased]
 > Changes staged but not yet deployed to production.
 
+### Security
+- `.gitignore` updated to explicitly block `*.zip`, `/storage/logs`, `.DS_Store`, and `Thumbs.db` from ever being committed. `.env` and `.env.backup` entries consolidated and confirmed present.
+
 ### Fixed
 - `resources/views/events/view.blade.php` (+15 lines / -11 lines)
   Event view crashed for admin users without `tbl_member_info` because the page

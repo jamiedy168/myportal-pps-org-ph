@@ -16,7 +16,10 @@ public_html/storage
 public_html/hot
 
 storage/*.key
+/storage/logs
 .env
+.env.backup
+.env.production
 Homestead.yaml
 Homestead.json
 /.vagrant
@@ -24,7 +27,12 @@ Homestead.json
 
 /public/build
 /storage/pail
-.env.backup
-.env.production
 .phpactor.json
 auth.json
+
+# Deployment archives
+*.zip
+
+# OS files
+.DS_Store
+Thumbs.db
