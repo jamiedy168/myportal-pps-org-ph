@@ -118,7 +118,7 @@
 | P0-T1 | Run Claude Code audit — all routes, controllers, views, role checks | ✅ Done |
 | P0-T2 | Map every `role_id` hardcoded check in the codebase | ✅ Done |
 | P0-T3 | Commit all untracked programmer files to GitHub for backup | ✅ Done |
-| P0-T4 | List all Composer packages — flag vulnerable and abandoned ones | ⏳ Pending |
+| P0-T4 | List all Composer packages — flag vulnerable and abandoned ones | ✅ Done |
 | P0-T5 | List all database tables and relationships | ⏳ Pending |
 | P0-T6 | Document all existing features (what works, what is half-built) | ⏳ Pending |
 | P0-T7 | Set up Git branching strategy (main / staging / feature branches) | ⏳ Pending |
@@ -204,6 +204,7 @@
 | 003 | Phase 0 | P0-T2 | Fixed unprotected /clear-all route in web.php | 2026-04-05 | Done |
 | 004 | Phase 0 | P0-T3 | Committed all untracked programmer files to GitHub for backup | 2026-04-05 | Done |
 | 005 | Phase 0 | Security | Added .env.example to .gitignore and rewrote it with safe placeholders only | 2026-04-05 | Done |
+| 006 | Phase 0 | P0-T4 | Audited all Composer packages, identified vulnerable and abandoned packages, Stripe packages flagged for removal | 2026-04-05 | Done — COMPOSER-AUDIT.md created |
 
 ---
 

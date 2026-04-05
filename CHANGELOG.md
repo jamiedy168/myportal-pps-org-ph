@@ -100,6 +100,7 @@ Members see live stream links in the sidebar and on event pages.
 > Changes staged but not yet deployed to production.
 
 ### Added
+- `COMPOSER-AUDIT.md` — full audit of all Composer packages: 9 security vulnerabilities across 7 packages, 5 abandoned packages, and recommended actions for each. No Stripe packages found — project uses PayMongo only.
 - Committed 38 previously untracked programmer files to Git for backup: new controllers (Announcement, Certificate, DatabaseBackup, Impersonate, IvsStream), models (Announcement, BackupLog, IvsStream), exports (CPDPoints, ElectionResults), migrations (6 files), Blade views (announcements, IVS player, database backup, IVS maintenance, pagination), config (professional.php), and platform/nginx configs.
 
 ### Security
