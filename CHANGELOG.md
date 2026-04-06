@@ -99,6 +99,15 @@ Members see live stream links in the sidebar and on event pages.
 ## [Unreleased]
 > Changes staged but not yet deployed to production.
 
+### Security
+- Updated vulnerable Composer packages (P0-T5):
+  - `symfony/http-foundation`: 6.4.25 → 6.4.35 (CVE-2025-64500 — PATH_INFO authorization bypass)
+  - `symfony/process`: 6.4.25 → 6.4.33 (CVE-2026-24739 — Windows Git Bash argument escaping)
+  - `aws/aws-sdk-php`: 3.356.17 → 3.376.3 (GHSA-27qh-8cxx-2cr5 CloudFront injection, CVE-2025-14761 S3 encryption)
+  - `league/flysystem-aws-s3-v3`: 3.0.0 → 3.32.0 (loosened constraint from `3.0` to `^3.0`)
+  - `league/commonmark`: already at 2.8.2 (CVE-2026-33347 already resolved)
+  - Remaining: `laravel/framework` CVE-2025-27515 (file validation bypass) deferred to Phase 4 — only patched in Laravel 10+.
+
 ### Added
 - `COMPOSER-AUDIT.md` — full audit of all Composer packages: 9 security vulnerabilities across 7 packages, 5 abandoned packages, and recommended actions for each. No Stripe packages found — project uses PayMongo only.
 - Committed 38 previously untracked programmer files to Git for backup: new controllers (Announcement, Certificate, DatabaseBackup, Impersonate, IvsStream), models (Announcement, BackupLog, IvsStream), exports (CPDPoints, ElectionResults), migrations (6 files), Blade views (announcements, IVS player, database backup, IVS maintenance, pagination), config (professional.php), and platform/nginx configs.
