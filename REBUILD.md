@@ -105,6 +105,8 @@
 | B14 | Session-bound payment success/cancel flow incomplete | 🟠 Medium | ⏳ Pending |
 | B15 | Sensitive keys exposed in Git history (APP_KEY, DB_PASSWORD, AWS keys, PayMongo keys) | 🔴 Critical | ✅ Fixed |
 | B16 | .env.config contained real secrets in Git | 🔴 Critical | ✅ Fixed |
+| B17 | phpunit/phpunit CVE-2026-24765 — unsafe deserialization in PHPT code coverage handling (dev-only) | 🟡 High | ⏳ Fix in Phase 4 |
+| B18 | psy/psysh CVE-2026-25129 — local privilege escalation via CWD .psysh.php auto-load (transitive) | 🟡 Medium | ⏳ Fix in Phase 4 |
 
 ---
 

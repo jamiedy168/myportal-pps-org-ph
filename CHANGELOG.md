@@ -107,6 +107,8 @@ Members see live stream links in the sidebar and on event pages.
   - `league/flysystem-aws-s3-v3`: 3.0.0 → 3.32.0 (loosened constraint from `3.0` to `^3.0`)
   - `league/commonmark`: already at 2.8.2 (CVE-2026-33347 already resolved)
   - Remaining: `laravel/framework` CVE-2025-27515 (file validation bypass) deferred to Phase 4 — only patched in Laravel 10+.
+  - Logged B17: `phpunit/phpunit` CVE-2026-24765 — unsafe deserialization (dev-only, deferred to Phase 4).
+  - Logged B18: `psy/psysh` CVE-2026-25129 — local privilege escalation via CWD auto-load (transitive, deferred to Phase 4).
 
 ### Added
 - `COMPOSER-AUDIT.md` — full audit of all Composer packages: 9 security vulnerabilities across 7 packages, 5 abandoned packages, and recommended actions for each. No Stripe packages found — project uses PayMongo only.
