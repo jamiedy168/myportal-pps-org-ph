@@ -2047,7 +2047,8 @@ class EventController extends Controller
     
             $response = Curl::to('https://api.paymongo.com/v1/checkout_sessions')
                             ->withHeader('Content-Type: application/json')
-                            ->withHeader('accept: application/json')\n    //                     ->withHeader('Idempotency-Key: ' . Str::uuid())
+                            ->withHeader('accept: application/json')
+                            //->withHeader('Idempotency-Key: ' . Str::uuid())
                             ->withHeader('Authorization: Basic ' . PaymongoConfig::key())
                             ->withData($data)
                             ->asJson()
@@ -2253,7 +2254,8 @@ class EventController extends Controller
             ];
             $response = Curl::to('https://api.paymongo.com/v1/checkout_sessions')
                             ->withHeader('Content-Type: application/json')
-                            ->withHeader('accept: application/json')\n    //                     ->withHeader('Idempotency-Key: ' . Str::uuid())
+                            ->withHeader('accept: application/json')
+                            //->withHeader('Idempotency-Key: ' . Str::uuid())
                             ->withHeader('Authorization: Basic ' . PaymongoConfig::key())
                             ->withData($data)
                             ->asJson()
@@ -2277,7 +2279,8 @@ class EventController extends Controller
 
 
         $response = Curl::to('https://api.paymongo.com/v1/checkout_sessions/'.$sessionId)
-                        ->withHeader('accept: application/json')\n    //                     ->withHeader('Idempotency-Key: ' . Str::uuid())
+                        ->withHeader('accept: application/json')
+                            //->withHeader('Idempotency-Key: ' . Str::uuid())
                         ->withHeader('Authorization: Basic ' . PaymongoConfig::key())
                         ->asJson()
                         ->get();
