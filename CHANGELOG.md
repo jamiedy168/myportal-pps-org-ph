@@ -99,6 +99,20 @@ Members see live stream links in the sidebar and on event pages.
 ## [Unreleased]
 > Changes staged but not yet deployed to production.
 
+### Phase 0 Complete — 2026-04-06
+All Phase 0 (Codebase Audit) tasks are finished. Summary of what was accomplished:
+
+- **P0-T1** — Full codebase audit completed. AUDIT.md created (routes, controllers, models, views, role checks, DB queries, packages, migrations).
+- **P0-T2** — All hardcoded `role_id` checks mapped across the codebase.
+- **P0-T3** — All untracked programmer files committed to Git for backup.
+- **P0-T4** — Full Composer package audit completed. COMPOSER-AUDIT.md created (9 vulnerabilities across 7 packages, 5 abandoned packages).
+- **P0-T5** — Vulnerable Composer packages updated: `symfony/http-foundation`, `symfony/process`, `aws/aws-sdk-php`, `league/flysystem-aws-s3-v3`.
+- **P0-T6** — Git branching strategy established: `staging` branch created, BRANCHING.md and PR template added.
+- **P0-T7** — Critical syntax error in EventController.php fixed (literal `\n` on 3 method chain lines).
+- **P0-T8** — All existing features documented in AUDIT.md.
+
+**Moving to Phase 1 — Foundation & Standards** (next: Spatie Laravel Permission).
+
 ### Security
 - Updated vulnerable Composer packages (P0-T5):
   - `symfony/http-foundation`: 6.4.25 → 6.4.35 (CVE-2025-64500 — PATH_INFO authorization bypass)
