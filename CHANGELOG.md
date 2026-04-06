@@ -115,6 +115,9 @@ Members see live stream links in the sidebar and on event pages.
 - `.github/PULL_REQUEST_TEMPLATE.md` — PR checklist: what was changed, tested on staging, CHANGELOG updated, REBUILD updated, php -l passed.
 - `staging` branch created and pushed to origin.
 
+### Fixed
+- `app/Http/Controllers/EventController.php` — resolved syntax error (B1): literal `\n` escape sequences on lines 2050, 2257, and 2282 were breaking the method chain on three separate `Curl::to()` calls. The commented-out `Idempotency-Key` header was appended to the preceding line as a literal `\n` string instead of being placed on its own line. Fixed by splitting each onto a proper new line. `php -l` now passes clean.
+
 ### Added
 - `COMPOSER-AUDIT.md` — full audit of all Composer packages: 9 security vulnerabilities across 7 packages, 5 abandoned packages, and recommended actions for each. No Stripe packages found — project uses PayMongo only.
 - Committed 38 previously untracked programmer files to Git for backup: new controllers (Announcement, Certificate, DatabaseBackup, Impersonate, IvsStream), models (Announcement, BackupLog, IvsStream), exports (CPDPoints, ElectionResults), migrations (6 files), Blade views (announcements, IVS player, database backup, IVS maintenance, pagination), config (professional.php), and platform/nginx configs.
